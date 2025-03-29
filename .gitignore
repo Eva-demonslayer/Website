@@ -1,4 +1,4 @@
-design/__pycache__/
-home/__pycache__/__init__.cpython-37.pyc
-setup/__pycache__/
 site_env/
+site/design/__pycache__/
+site/home/__pycache__/
+site/setup/__pycache__/
