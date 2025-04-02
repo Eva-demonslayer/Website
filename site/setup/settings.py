@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,6 +31,7 @@ ALLOWED_HOSTS = ['bensalman73.pythonanywhere.com','127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'home.apps.HomeConfig',
     'design.apps.DesignConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -55,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
-        'APP_DIRS': True,
+        'APP_DIRS': True, # Enables app-specific template discovery
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -115,8 +117,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
-STATIC_ROOT = "/home/bensalman73/static"
+STATIC_URL = '/static/'
+STATIC_ROOT = "C:/home/bensalman73/static/"
+STATICFILES_DIRS = [
+    r"C:\Users\ben_s\Desktop\Image_Transfer",  # Add this directory as a source for static files
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

@@ -2,7 +2,7 @@ Django Setup:
 Step	Description	                        Command
 1.	    Set up a virtual environment	    python -m venv env
 2.	    Activate the virtual environment	source site_env/Scripts/activate 
-                                            powershell: ".\/site_env/Scripts/activate.ps1"
+                                            powershell: .\/site_env/Scripts/activate.ps1
 3.	    Install Django	                    python -m pip install django
 4.	    Pin your dependencies	            python -m pip freeze > requirements.txt
 5.	    Set up a Django project	            django-admin startproject <projectname>
@@ -15,6 +15,7 @@ Changes to Django models:
 
 Interactive Console:
 python manage.py shell
+exit()
 
 Server Initiate/Deactivate:
 1. python manage.py runserver

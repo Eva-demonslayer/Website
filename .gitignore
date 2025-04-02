@@ -2,3 +2,4 @@ site_env/
 site/design/__pycache__/
 site/home/__pycache__/
 site/setup/__pycache__/
+migrations/

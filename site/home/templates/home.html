@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Image</title>
+    {% load static %} <!-- Load static template tag -->
+</head>
+<body>
+    <h1>Image from Static Directory</h1>
+    
+    <!-- Display the image -->
+    <img src="{% static 'Barcode_image_detect.jpg' %}">>
+
+    <p>This is an example of displaying an image bundled in the static/images folder.</p>
+</body>
